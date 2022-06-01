@@ -341,7 +341,7 @@ def send_mail(subject, info):
     msg.set_content(info)
 
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-        smtp.login('mvarbla9825@gmail.com', 'omxfnnekyyozjqjm')
+        smtp.login('', '')
         smtp.send_message(msg)
 
     print('Correo enviado')
